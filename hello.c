@@ -2,5 +2,12 @@
 
 int main(void)
 {
-    printf("Hello Reed the goat!\n");
+    char name [49];
+    printf("Enter your name: ");
+    scanf("%s", &name);
+    printf("Hello %s!\n", name);
+    char fcolor [49];
+    printf("Enter Favorite Color: ");
+    scanf("%s", &fcolor);
+    printf("Your favorite color is %s!\n", fcolor);
 }
