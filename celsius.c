@@ -14,4 +14,3 @@ celsius = (tempreture - 32) / 1.8;
 printf(" Tempreture in C: %.2f\n", celsius);
 //-40 C = -40 F
 }
-
