@@ -1,27 +1,17 @@
+
 #include <stdio.h>
-
-int main(void)
-{
-int movie, hours, endtime, starttime;
-
-printf("Enter the movie (in min):\n");
-scanf("%d", &movie);
-//find hours;
-
-printf("Enter start time:\n");
-scanf("%d", &starttime);
-//print empty line
-printf("\n");
-
-// Calculations
- hours = (movie % 60);
- endtime = starttime + hours;
-//print time in hours
-
-printf("Runtime (in hours):\n");
-
-// Results
-printf("Runtime: %d\n", hours);
-printf("Endtime: %d\n", endtime);
-
+int main(void) {
+int total_minutes;
+printf("Movie running time: ");
+ scanf("%d", &total_minutes);
+int start_h;
+int start_m;
+printf("Start time: ");
+scanf("%d %d", &start_h, &start_m);
+int hours = total_minutes / 60;
+ int min = total_minutes % 60;
+int end_h = start_h + hours;
+int end_m = start_m + min;
+printf("The movie will last %d hr and %d min.\n", hours, min);
+ printf("End time: %d:%d \n", end_h, end_m);
 }
