@@ -31,4 +31,4 @@ else if(tempreture < 40){
 else if(tempreture > 40){
     printf("🔥 Very hot weather\n");
 }
-}
+} 
